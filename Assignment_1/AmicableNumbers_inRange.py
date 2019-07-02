@@ -13,6 +13,8 @@ def sumPdivisors(num,hashMap):
 #     Stores the key in hash map and returns the hashMap
         hashMap[num]=x
         return hashMap
+    else:
+        return {}
 
         
 # An Empty Hash map is used to store the key as number and the sum of divisiors as values
@@ -22,3 +24,4 @@ end = int (input("Enter the ending range "))
 for  i in range(start,end+1):
 #     Every time new hash map is returned with new key value pair
         hashMap=sumPdivisors(i,hashMap)
+    
